@@ -26,7 +26,7 @@ public class HelloController {
         return dao.listForBeanPropertyRowMapper();
     }
 
-    @RequestMapping(value = "/add", produces = "application/json; charset=utf8")
+    @RequestMapping(value = "/add")
     public String add(@RequestParam("name") String name, @RequestParam("message") String message) {
         Hello hello = new Hello();
         hello.setName(name);
